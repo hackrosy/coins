@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع العملات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>موقع العملات الاقتصادية</h1>
+        <nav>
+            <ul>
+                <li><a href="#currencies">أسعار العملات</a></li>
+                <li><a href="#news">الأخبار الاقتصادية</a></li>
+                <li><a href="#converter">محول العملات</a></li>
+                <li><a href="#trade">تداول العملات</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="currencies">
+            <h2>أسعار العملات</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>العملة</th>
+                        <th>السعر</th>
+                        <th>التغير</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>الدولار الأمريكي</td>
+                        <td>25.00 جنيه</td>
+                        <td>+0.05%</td>
+                    </tr>
+                    <tr>
+                        <td>اليورو</td>
+                        <td>27.50 جنيه</td>
+                        <td>-0.10%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="news">
+            <h2>آخر الأخبار الاقتصادية</h2>
+            <article>
+                <h3>ارتفاع أسعار الذهب عالميًا</h3>
+                <p>شهدت أسعار الذهب ارتفاعًا ملحوظًا اليوم بسبب التوترات الاقتصادية...</p>
+            </article>
+            <article>
+                <h3>تراجع الدولار أمام العملات الرئيسية</h3>
+                <p>تراجع مؤشر الدولار الأمريكي بنسبة 0.2% مقابل سلة من العملات...</p>
+            </article>
+        </section>
+        <section id="converter">
+            <h2>محول العملات</h2>
+            <form>
+                <label for="amount">المبلغ:</label>
+                <input type="number" id="amount" name="amount" required>
+                <label for="from-currency">من:</label>
+                <select id="from-currency" name="from-currency">
+                    <option value="usd">الدولار الأمريكي</option>
+                    <option value="eur">اليورو</option>
+                </select>
+                <label for="to-currency">إلى:</label>
+                <select id="to-currency" name="to-currency">
+                    <option value="egp">الجنيه المصري</option>
+                    <option value="usd">الدولار الأمريكي</option>
+                </select>
+                <button type="submit">تحويل</button>
+            </form>
+        </section>
+        <section id="trade">
+            <h2>تداول العملات</h2>
+            <form id="trade-form">
+                <label for="trade-type">نوع العملية:</label>
+                <select id="trade-type" name="trade-type">
+                    <option value="buy">شراء</option>
+                    <option value="sell">بيع</option>
+                </select>
+                <label for="trade-amount">المبلغ:</label>
+                <input type="number" id="trade-amount" name="trade-amount" required>
+                <label for="payment-method">طريقة الدفع:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="credit-card">بطاقة ائتمانية</option>
+                    <option value="bank-transfer">تحويل بنكي</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                <button type="submit">تنفيذ العملية</button>
+            </form>
+            <div id="trade-result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة © 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
